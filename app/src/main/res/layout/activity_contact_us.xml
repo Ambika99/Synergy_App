@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs"
+    android:background="@drawable/backgroundgradient"
+    >
+    <LinearLayout
+        android:id="@+id/images"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:background="@drawable/backgroundgradient"
+    android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/slidedots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewpager"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/images">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/images"
+        android:orientation="vertical">
+
+    <pl.hypeapp.materialtimelineview.MaterialTimelineView
+        android:id="@+id/material_timeline_view1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_orange_light"
+        app:timeline_bottom_radio_color="@android:color/white"
+        app:timeline_line_color="@android:color/white"
+        app:timeline_margin_start="32dp"
+        app:timeline_position="first"
+        app:timeline_radio_outline_radius="20"
+        app:timeline_radio_radius="12"
+        app:timeline_top_radio_color="@android:color/white"
+        app:timeline_type="item">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALL US AT:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.197" />
+
+
+
+    </pl.hypeapp.materialtimelineview.MaterialTimelineView>
+        <pl.hypeapp.materialtimelineview.MaterialTimelineView
+            android:id="@+id/material_timeline_viewline1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/backgroundgradient"
+            app:timeline_bottom_radio_color="@android:color/white"
+            app:timeline_line_color="@android:color/background_dark"
+            app:timeline_margin_start="32dp"
+            app:timeline_position="middle"
+            app:timeline_radio_outline_radius="20"
+            app:timeline_radio_radius="12"
+            app:timeline_top_radio_color="@android:color/white"
+            app:timeline_type="line"
+            >
+
+
+        </pl.hypeapp.materialtimelineview.MaterialTimelineView>
+        <pl.hypeapp.materialtimelineview.MaterialTimelineView
+            android:id="@+id/material_timeline_view2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@android:color/holo_orange_light"
+            app:timeline_bottom_radio_color="@android:color/white"
+            app:timeline_line_color="@android:color/white"
+            app:timeline_margin_start="32dp"
+            app:timeline_position="first"
+            app:timeline_radio_outline_radius="20"
+            app:timeline_radio_radius="12"
+            app:timeline_top_radio_color="@android:color/white"
+            app:timeline_type="item">
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OUR SOCIAL MEDIA HANDLES:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.052"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.197" />
+
+            <br.com.bloder.magic.view.MagicButton
+                android:id="@+id/facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:layout_marginStart="76dp"
+                app:button_icon="@drawable/facebook"
+                app:button_icon_height="30dp"
+                app:button_icon_width="30dp"
+                app:expandable_area_color="#3b5998"
+                app:hide_text="Facebook"
+                app:hide_text_color="#ffffff"
+                app:hide_text_size="6sp"
+                app:icon_button_color="@android:color/holo_orange_dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:magic_button_size="50dp" />
+
+            <br.com.bloder.magic.view.MagicButton
+                android:id="@+id/insta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="76dp"
+                app:button_icon="@drawable/insta"
+                app:button_icon_height="30dp"
+                app:button_icon_width="30dp"
+                app:expandable_area_color="#bc2a8d"
+                app:hide_text="Instagram"
+                app:hide_text_color="#ffffff"
+                app:hide_text_size="6sp"
+                app:icon_button_color="@android:color/holo_orange_dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:magic_button_size="50dp" />
+
+
+
+        </pl.hypeapp.materialtimelineview.MaterialTimelineView>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
