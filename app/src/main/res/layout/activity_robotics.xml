@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Codeolympia"
-    android:background="@drawable/backgrounddark">
+    tools:context=".Robotics">
     <LinearLayout
         android:id="@+id/images"
         android:layout_width="match_parent"
@@ -73,15 +72,14 @@
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
+                    android:layout_height="68dp"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_marginBottom="20dp"
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginRight="30dp"
-                    android:text="CODE-OLYMPIA"
+                    android:text="VOICE CONTROLLED  ROBOTICS WORKSHOP"
                     android:textColor="@android:color/background_light"
-                    android:textSize="35sp"
+                    android:textSize="25sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -116,14 +114,14 @@
                     android:layout_height="750dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
-                    android:text="Do solving nerve-wracking coding questions count among your hobbies?
-Is competitive programming enough to get your juices flowing?
+                    android:text="Imagine a robot which could attend to your whims and desires just by hearing your voice. Now imagine you developing the robot yourself. Sounds awesome?
 
-If YES, then IETE-ISF’s Codeolympia is an event you have to be a part of, this February.
-This thrilling 12-hours non-stop coding fest, conducted as collaboration with SENSE-VIT promises to be a splendid show of young coding talent, where participants will be given programming questions of varying levels, and there will be a plethora of coding languages to choose from, in order to solve them.
+IETE-ISF, in association with roboVITics welcomes you to our brand new Voice-Controlled Robotics workshop.
 
-And that’s not it. This event will be held in association with HackerRank.
-All the participants will get participation certificates, and the top 5 teams will get exciting goodies, from HackerRank."
+In this workshop spanning 2 days, participants will be brushed up with the basics of robotics and using the Arduino software. They will be taught how to handle the L293D IC and constructing a robot using it.
+Students will also be helped in building voice recognition Android app, controlling a robot using the app and much more!
+
+If that was not enough to get your attention, we will also be providing hardware kits, and a certificate, which would prove to be useful in your future endeavours."
                     android:textColor="@android:color/background_light"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"

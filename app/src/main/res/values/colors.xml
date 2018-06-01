@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFC107</color>
-    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="coloryellow">#FFC107</color>
+    <color name="colorPrimary">#003366</color>
+    <color name="colorPrimaryDarkyellow">#FFA000</color>
+    <color name="colorPrimaryDark">#003366</color>
     <color name="colorAccent">#FF4081</color>
     <color name="lightgray">#ededed</color>
     <color name="deeppurple">#7c4dff</color>
@@ -10,6 +12,5 @@
     <color name="darkblue">#23283a</color>
     <color name="testcolorblue">#152b38</color>
     <color name="pink">#fe104d</color>
-
     <color name="black_overlay">#66000000</color>
 </resources>

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Codeolympia"
-    android:background="@drawable/backgrounddark">
+    tools:context=".Paperpresentation">
     <LinearLayout
         android:id="@+id/images"
         android:layout_width="match_parent"
@@ -73,21 +72,20 @@
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
+                    android:layout_height="68dp"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_marginBottom="20dp"
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginRight="30dp"
-                    android:text="CODE-OLYMPIA"
+                    android:text="PAPER PRESENTATION (CSE/ECE/EEE)"
                     android:textColor="@android:color/background_light"
-                    android:textSize="35sp"
+                    android:textSize="25sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="700dp"
+                android:layout_height="900dp"
                 android:orientation="vertical"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="10dp"
@@ -113,17 +111,20 @@
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
-                    android:layout_height="750dp"
+                    android:layout_height="880dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
-                    android:text="Do solving nerve-wracking coding questions count among your hobbies?
-Is competitive programming enough to get your juices flowing?
+                    android:text="Do you have the zeal to show your research ideas and products to the world?
+Want your ideas to get attention and opinions from experienced people?
+Don’t worry, as we are back with our Paper Presentation session with IETE-ISF’s Synergy ’18!!
 
-If YES, then IETE-ISF’s Codeolympia is an event you have to be a part of, this February.
-This thrilling 12-hours non-stop coding fest, conducted as collaboration with SENSE-VIT promises to be a splendid show of young coding talent, where participants will be given programming questions of varying levels, and there will be a plethora of coding languages to choose from, in order to solve them.
+The Paper Presentation Event at Synergy'18 aims to provide the best platform to showcase your research ideas in front of an esteemed panel of judges. If you have carried out research in the electronics and computer science fields, we would be more than happy to hear your ideas out! Prepare a presentation and unleash the speaker in you to grab exciting prizes!
 
-And that’s not it. This event will be held in association with HackerRank.
-All the participants will get participation certificates, and the top 5 teams will get exciting goodies, from HackerRank."
+So hurry up and grab this chance because opportunities don’t knock twice!!
+
+Mail your CSE/IT/ECE/EEE/EIE related abstracts (word limit : 250-300 words) to synergypapers18@gmail.com by 23rd January, 2018.
+
+If your idea gets selected, it will be published in the International Journal for Research in Applied Science and Engineering Technology (IJRASET) with a Thomson Reuters indexing, an astounding scientific journal impact factor of 6.887 and an ISRA journal impact factor of 3.166."
                     android:textColor="@android:color/background_light"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -284,6 +285,5 @@ All the participants will get participation certificates, and the top 5 teams wi
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
 
 </RelativeLayout>

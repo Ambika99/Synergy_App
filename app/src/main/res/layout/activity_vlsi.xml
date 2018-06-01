@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Codeolympia"
-    android:background="@drawable/backgrounddark">
+    tools:context=".Vlsi">
     <LinearLayout
         android:id="@+id/images"
         android:layout_width="match_parent"
@@ -73,13 +72,12 @@
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
+                    android:layout_height="60dp"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_marginBottom="20dp"
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginRight="30dp"
-                    android:text="CODE-OLYMPIA"
+                    android:text="VLSI WORKSHOP"
                     android:textColor="@android:color/background_light"
                     android:textSize="35sp"
                     android:textStyle="bold" />
@@ -87,7 +85,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="700dp"
+                android:layout_height="800dp"
                 android:orientation="vertical"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="10dp"
@@ -116,14 +114,14 @@
                     android:layout_height="750dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
-                    android:text="Do solving nerve-wracking coding questions count among your hobbies?
-Is competitive programming enough to get your juices flowing?
+                    android:text="Have you ever wondered how multitude of data can be stored in tiny IC chips?
+'Microprocessor-oriented robotics' sounds fascinating to you?
 
-If YES, then IETE-ISF’s Codeolympia is an event you have to be a part of, this February.
-This thrilling 12-hours non-stop coding fest, conducted as collaboration with SENSE-VIT promises to be a splendid show of young coding talent, where participants will be given programming questions of varying levels, and there will be a plethora of coding languages to choose from, in order to solve them.
+If the answers to the above questions are an astounding YES, then IETE-ISF's VLSI Design workshop is the place you want to be, this February.
 
-And that’s not it. This event will be held in association with HackerRank.
-All the participants will get participation certificates, and the top 5 teams will get exciting goodies, from HackerRank."
+Over the course of 2 days, you will be taught various topics including VLSI design methodologies and review of digital systems. Hands-on practical knowledge will be imparted when students will be taught design entry methods using Verilog HDL, FSM design and lots of other interesting things. These will surely add feathers to your resume and help you stand out from the crowd.
+
+And mind you, veterans from the electronics industry from 'India Labs' will be covering this workshop, on 23rd and 24th February, 2018, so you do not want to miss this out !"
                     android:textColor="@android:color/background_light"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"

@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Codeolympia_slider extends PagerAdapter {
-    private int[] image_resources = {R.drawable.ietesymbol,R.drawable.guest};
+    private int[] image_resources = {R.drawable.hack,R.drawable.codeolympia};
     private Context ctx;
     private LayoutInflater layoutInflater;
     public Codeolympia_slider(Context ctx){

@@ -9,11 +9,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-public class Contactus_slider extends PagerAdapter {
-    private int[] image_resources = {R.drawable.synergybanner,R.drawable.ietesymbol};
+public class Vlsi_slider extends PagerAdapter {
+    private int[] image_resources = {R.drawable.hack,R.drawable.machinelearning};
     private Context ctx;
     private LayoutInflater layoutInflater;
-    public Contactus_slider(Context ctx){
+    public Vlsi_slider(Context ctx){
         this.ctx = ctx;
     }
 
