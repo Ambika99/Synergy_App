@@ -20,7 +20,7 @@ import com.nightonke.boommenu.BoomButtons.TextInsideCircleButton;
 import com.nightonke.boommenu.BoomMenuButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    CardView aboutus,synergy,events,gallery,faqs,contactus;
+    CardView aboutus,synergy,events,gallery,faqs,contactus,culturalnight;
     int[] images ={R.drawable.vlsi,R.drawable.ml,R.drawable.robo,R.drawable.code,R.drawable.paperpresentation,R.drawable.android};
     String[] eventnames ={"VLSI Workshop","Machine Learning Workshop","Robotics Workshop","CodeOlympia",
             "Paper Presentation (CSE/ECE/EEE)","Android APP DEV WORKSHOP"};
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         gallery = (CardView) findViewById(R.id.gallery);
         faqs = (CardView) findViewById(R.id.faqs);
         contactus = (CardView) findViewById(R.id.contactus);
+        culturalnight = (CardView) findViewById(R.id.culturalnight);
         clayout = (CoordinatorLayout) findViewById(R.id.Clayout);
 
         aboutus.setOnClickListener(this);
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         gallery.setOnClickListener(this);
         faqs.setOnClickListener(this);
         contactus.setOnClickListener(this);
+        culturalnight.setOnClickListener(this);
         BoomMenuButton bmb = (BoomMenuButton) findViewById(R.id.bmb);
         for (int i = 0; i < bmb.getPiecePlaceEnum().pieceNumber(); i++) {
             HamButton.Builder builder = new HamButton.Builder()
@@ -112,14 +114,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.events:
                 Toast.makeText(MainActivity.this,"Click on the Ham Button to get the Event List",Toast.LENGTH_LONG).show();
+                break;
             case R.id.gallery:
                 Intent i2 = new Intent();
                 i2.setClass(MainActivity.this,Gallery.class);
                 startActivity(i2);
                 break;
             case R.id.faqs:
-              Toast.makeText(MainActivity.this,"FAQs Page",Toast.LENGTH_LONG).show();
+                Intent i3 = new Intent();
+                i3.setClass(MainActivity.this,Faqs.class);
+                startActivity(i3);
                break;
+            case R.id.culturalnight:
+                Intent i4 = new Intent();
+                i4.setClass(MainActivity.this,Culturalnight.class);
+                startActivity(i4);
+                break;
+
 
         }
 
