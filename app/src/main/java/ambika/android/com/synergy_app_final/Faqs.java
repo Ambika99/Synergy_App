@@ -21,13 +21,13 @@ public class Faqs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faqs);
-        YoYo.with(Techniques.FlipInY)
+        /*YoYo.with(Techniques.FlipInY)
                 .duration(3000)
 
                 .playOn(findViewById(R.id.recyclerView));
         YoYo.with(Techniques.Landing)
                 .duration(2000)
-                .playOn(findViewById(R.id.fi));
+                .playOn(findViewById(R.id.fi));*/
 
 
         //getting the recyclerview from xml
