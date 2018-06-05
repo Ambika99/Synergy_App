@@ -72,19 +72,140 @@
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <com.alexfu.countdownview.CountDownView
-                            android:id="@+id/count_down"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                            app:startDuration="60000" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="101dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_below="@+id/heading"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/eventStart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="50sp"
+                                android:singleLine="true"
+                                android:text="SYNERGY IS HERE"
+                                android:textColor="#003366"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout1"
+                                android:layout_width="79dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtDay"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#003366"
+                                    android:textSize="35sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_Day"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="DAYS"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#003366"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout2"
+                                android:layout_width="79dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtHour"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#003366"
+                                    android:textSize="35sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_Hour"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="HOURS"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#003366"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout3"
+                                android:layout_width="79dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtMinute"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#003366"
+                                    android:textSize="35sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_Minute"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="MINUTES"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#003366"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Check your bank activities"
+                            android:text="Till Synergy'19"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>

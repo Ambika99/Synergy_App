@@ -12,11 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Codeolympia" />
         <activity android:name=".ContactUs" />
@@ -27,7 +23,15 @@
         <activity android:name=".Paperpresentation" />
         <activity android:name=".Gallery" />
         <activity android:name=".Faqs" />
-        <activity android:name=".Culturalnight"></activity>
+        <activity android:name=".Culturalnight" />
+        <activity android:name=".Synergy" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

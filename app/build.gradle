@@ -44,6 +44,8 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'nl.dionsegijn:konfetti:1.1.2'
     implementation 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+    implementation 'com.github.alexfu:CountDownView:0.1.0'
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
 
 
 }
