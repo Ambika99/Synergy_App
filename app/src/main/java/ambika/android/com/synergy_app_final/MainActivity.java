@@ -169,7 +169,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
                 case R.id.aboutus:
-                Toast.makeText(MainActivity.this,"About Us Page",Toast.LENGTH_LONG).show();
+                    Intent i6 = new Intent();
+                    i6.setClass(MainActivity.this,Aboutus.class);
+                    startActivity(i6);
                 break;
 
             case R.id.synergy:

@@ -15,7 +15,7 @@
             android:id="@+id/iete"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:layout_gravity="center"
+            android:layout_gravity="center_horizontal|center"
             android:layout_marginTop="80dp"
             android:foregroundGravity="center"
             android:src="@drawable/ietelogos" />
@@ -36,7 +36,7 @@
             android:id="@+id/synergy"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:layout_gravity="center"
+            android:layout_gravity="center_horizontal|center"
             android:layout_marginBottom="70dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="0dp"
