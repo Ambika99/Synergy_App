@@ -14,7 +14,7 @@ import com.ugurtekbas.fadingindicatorlibrary.FadingIndicator;
 
 public class Aboutus extends AppCompatActivity {
     ViewPager pager;
-    Appdev_slider adapter;
+    Contactus_slider adapter;
     LinearLayout sliderlayout;
 
     @Override
@@ -35,7 +35,7 @@ public class Aboutus extends AppCompatActivity {
                 } );
         pager = findViewById(R.id.pager);
         sliderlayout = (LinearLayout) findViewById(R.id.slidedots);
-        adapter = new Appdev_slider(this);
+        adapter = new Contactus_slider(this);
         pager.setAdapter(adapter);
         FadingIndicator indicator = (FadingIndicator) findViewById(R.id.indicator);
         ViewPager viewpagerDefault = (ViewPager) findViewById(R.id.pager);

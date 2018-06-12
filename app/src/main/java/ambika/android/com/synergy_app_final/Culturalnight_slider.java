@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Culturalnight_slider extends PagerAdapter {
-    private int[] image_resources = {R.drawable.synergybanner,R.drawable.ietesymbol};
+    private int[] image_resources = {R.drawable.cul_10,R.drawable.cul_20};
     private Context ctx;
     private LayoutInflater layoutInflater;
     public Culturalnight_slider(Context ctx){

@@ -61,6 +61,17 @@ public class ContactUs extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        MagicButton gmail = (MagicButton) findViewById(R.id.gmail);
+        facebook.setMagicButtonClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent();
+                i.setAction(Intent.ACTION_VIEW);
+                i.addCategory(Intent.CATEGORY_BROWSABLE);
+                i.setData(Uri.parse("https://www.google.com/gmail/"));
+                startActivity(i);
+            }
+        });
 
         PushDownAnim.setPushDownAnimTo( button)
                 .setOnClickListener( new View.OnClickListener(){

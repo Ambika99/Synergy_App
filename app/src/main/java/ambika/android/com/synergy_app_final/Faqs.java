@@ -1,12 +1,16 @@
 package ambika.android.com.synergy_app_final;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.thekhaeng.pushdownanim.PushDownAnim;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +25,18 @@ public class Faqs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faqs);
+        Button button = findViewById(R.id.back);
+
+        PushDownAnim.setPushDownAnimTo( button)
+                .setOnClickListener( new View.OnClickListener(){
+                    @Override
+                    public void onClick( View view ){
+                        Intent i= new Intent();
+                        i.setClass(Faqs.this,MainActivity.class);
+                        startActivity(i);
+                    }
+
+                } );
         /*YoYo.with(Techniques.FlipInY)
                 .duration(3000)
 

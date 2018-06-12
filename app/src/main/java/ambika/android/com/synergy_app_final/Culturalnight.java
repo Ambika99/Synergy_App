@@ -2,6 +2,7 @@ package ambika.android.com.synergy_app_final;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,7 +19,7 @@ import nl.dionsegijn.konfetti.models.Shape;
 
 public class Culturalnight extends AppCompatActivity {
     ViewPager pager;
-    Appdev_slider adapter;
+    Culturalnight_slider adapter;
     LinearLayout sliderlayout;
     KonfettiView viewKonfetti;
 
@@ -28,7 +29,7 @@ public class Culturalnight extends AppCompatActivity {
         setContentView(R.layout.activity_culturalnight);
         pager = findViewById(R.id.pager);
         sliderlayout = (LinearLayout) findViewById(R.id.slidedots);
-        adapter = new Appdev_slider(this);
+        adapter = new Culturalnight_slider(this);
         pager.setAdapter(adapter);
         FadingIndicator indicator = (FadingIndicator) findViewById(R.id.indicator);
         ViewPager viewpagerDefault = (ViewPager) findViewById(R.id.pager);
@@ -45,6 +46,20 @@ public class Culturalnight extends AppCompatActivity {
                     public void onClick( View view ){
                         Intent i= new Intent();
                         i.setClass(Culturalnight.this,MainActivity.class);
+                        startActivity(i);
+                    }
+
+                } );
+        Button button2 = findViewById(R.id.register);
+
+        PushDownAnim.setPushDownAnimTo( button2)
+                .setOnClickListener( new View.OnClickListener(){
+                    @Override
+                    public void onClick( View view ){
+                        Intent i = new Intent();
+                        i.setAction(Intent.ACTION_VIEW);
+                        i.addCategory(Intent.CATEGORY_BROWSABLE);
+                        i.setData(Uri.parse("http://synergyietevit.tk/"));
                         startActivity(i);
                     }
 

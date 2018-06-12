@@ -8,47 +8,47 @@
     <LinearLayout
         android:id="@+id/images"
         android:layout_width="match_parent"
-        android:layout_height="177dp"
+        android:layout_height="180dp"
         android:background="@drawable/backgrounddark"
         android:orientation="vertical">
 
         <android.support.v4.view.ViewPager
             android:id="@+id/pager"
             android:layout_width="match_parent"
-            android:layout_height="147dp"
+            android:layout_height="match_parent"
             android:layout_marginTop="0dp"
             android:layout_weight="1"
             android:background="@drawable/backgrounddark"></android.support.v4.view.ViewPager>
 
-        <LinearLayout
-            android:id="@+id/slidedots"
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/slidedots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/images"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:background="@drawable/backgrounddark">
+        <com.ugurtekbas.fadingindicatorlibrary.FadingIndicator
+            android:id="@+id/indicator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/viewpager"
-            android:gravity="center_vertical|center_horizontal"
-            android:orientation="horizontal"
-            android:background="@drawable/backgrounddark">
-            <com.ugurtekbas.fadingindicatorlibrary.FadingIndicator
-                android:id="@+id/indicator"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:padding="10dp"
-                app:radius="5dp"
-                app:fillColor="#56B6BF"
-                app:strokeColor="#FC823B"
-                app:shape="Rectangle"
-                />
-
-
-        </LinearLayout>
-
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            app:radius="5dp"
+            app:fillColor="#56B6BF"
+            app:strokeColor="#FC823B"
+            app:shape="Rectangle"
+            />
 
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/images"
+        android:layout_below="@+id/slidedots"
         android:background="@drawable/backgrounddark">
 
         <LinearLayout
@@ -163,7 +163,18 @@ If your idea gets selected, it will be published in the International Journal fo
                     android:layout_height="40dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
-                    android:text="FEBRUARY 24TH, 2018"
+                    android:text="CSE - FEBRUARY 23TH, 2018"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="ECE/EEE - FEBRUARY 24TH, 2018"
                     android:textColor="@android:color/background_light"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -201,7 +212,7 @@ If your idea gets selected, it will be published in the International Journal fo
                     android:layout_height="40dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
-                    android:text="Rs.200"
+                    android:text="Rs.500 PER PARTICIPANT"
                     android:textColor="@android:color/background_light"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -240,7 +251,7 @@ If your idea gets selected, it will be published in the International Journal fo
                     android:layout_height="40dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
-                    android:text="First  prize -"
+                    android:text="FIRST PRIZE-"
                     android:textColor="@android:color/background_light"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"

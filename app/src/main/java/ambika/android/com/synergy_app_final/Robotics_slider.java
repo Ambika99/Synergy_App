@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Robotics_slider extends PagerAdapter {
-    private int[] image_resources = {R.drawable.hack,R.drawable.machinelearning};
+    private int[] image_resources = {R.drawable.robo20,R.drawable.robo10};
     private Context ctx;
     private LayoutInflater layoutInflater;
     public Robotics_slider(Context ctx){

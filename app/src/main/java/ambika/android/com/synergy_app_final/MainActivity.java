@@ -25,7 +25,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    CardView aboutus,synergy,events,gallery,faqs,contactus,culturalnight;
+    CardView aboutus,synergy,events,gallery,faqs,contactus,culturalnight,sponsors,combos;
     int[] images ={R.drawable.vlsi,R.drawable.ml,R.drawable.robo,R.drawable.code,R.drawable.paperpresentation,R.drawable.android};
     String[] eventnames ={"VLSI Workshop","Machine Learning Workshop","Robotics Workshop","CodeOlympia",
             "Paper Presentation (CSE/ECE/EEE)","Android APP DEV WORKSHOP"};
@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         contactus = (CardView) findViewById(R.id.contactus);
         culturalnight = (CardView) findViewById(R.id.culturalnight);
         clayout = (CoordinatorLayout) findViewById(R.id.Clayout);
+        sponsors = (CardView) findViewById(R.id.sponsors);
+        combos = (CardView) findViewById(R.id.combos);
 
         aboutus.setOnClickListener(this);
         synergy.setOnClickListener(this);
@@ -58,6 +60,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         faqs.setOnClickListener(this);
         contactus.setOnClickListener(this);
         culturalnight.setOnClickListener(this);
+        combos.setOnClickListener(this);
+        sponsors.setOnClickListener(this);
         BoomMenuButton bmb = (BoomMenuButton) findViewById(R.id.bmb);
         for (int i = 0; i < bmb.getPiecePlaceEnum().pieceNumber(); i++) {
             HamButton.Builder builder = new HamButton.Builder()
@@ -104,7 +108,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dd = (TextView)findViewById(R.id.txtDay);
         hh = (TextView)findViewById(R.id.txtHour);
         mm = (TextView)findViewById(R.id.txtMinute);
-        ss = (TextView)findViewById(R.id.txtSecond);
         eventStart = (TextView)findViewById(R.id.eventStart);
         heading = (TextView)findViewById(R.id.heading);
         countDownStart();
@@ -156,7 +159,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.linearLayout1).setVisibility(View.GONE);
         findViewById(R.id.linearLayout2).setVisibility(View.GONE);
         findViewById(R.id.linearLayout3).setVisibility(View.GONE);
-        findViewById(R.id.linearLayout4).setVisibility(View.GONE);
+        //findViewById(R.id.linearLayout4).setVisibility(View.GONE);
     }
 
     @Override
@@ -196,6 +199,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent i4 = new Intent();
                 i4.setClass(MainActivity.this,Culturalnight.class);
                 startActivity(i4);
+                break;
+            case R.id.combos:
+                Intent i7 = new Intent();
+                i7.setClass(MainActivity.this,Combos.class);
+                startActivity(i7);
+                break;
+            case R.id.sponsors:
+                Intent i8 = new Intent();
+                i8.setClass(MainActivity.this,Sponsors.class);
+                startActivity(i8);
                 break;
 
 

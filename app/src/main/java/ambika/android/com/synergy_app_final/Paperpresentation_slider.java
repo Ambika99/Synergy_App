@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Paperpresentation_slider extends PagerAdapter {
-    private int[] image_resources = {R.drawable.hack,R.drawable.machinelearning};
+    private int[] image_resources = {R.drawable.pap10,R.drawable.pap20};
     private Context ctx;
     private LayoutInflater layoutInflater;
     public Paperpresentation_slider(Context ctx){

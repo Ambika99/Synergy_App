@@ -56,7 +56,6 @@ public class Synergy extends AppCompatActivity {
         dd = (TextView)findViewById(R.id.txtDay);
         hh = (TextView)findViewById(R.id.txtHour);
         mm = (TextView)findViewById(R.id.txtMinute);
-        ss = (TextView)findViewById(R.id.txtSecond);
         eventStart = (TextView)findViewById(R.id.eventStart);
         heading = (TextView)findViewById(R.id.heading);
         countDownStart();
@@ -84,7 +83,6 @@ public class Synergy extends AppCompatActivity {
                         dd.setText(""+String.format("%02d",days));
                         hh.setText(""+String.format("%02d",hours));
                         mm.setText(""+String.format("%02d",minutes));
-                        ss.setText(""+String.format("%02d"+seconds));
 
                     }
                     else{
@@ -108,7 +106,6 @@ public class Synergy extends AppCompatActivity {
         findViewById(R.id.linearLayout1).setVisibility(View.GONE);
         findViewById(R.id.linearLayout2).setVisibility(View.GONE);
         findViewById(R.id.linearLayout3).setVisibility(View.GONE);
-        findViewById(R.id.linearLayout4).setVisibility(View.GONE);
     }
 
 

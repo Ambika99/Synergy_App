@@ -9,8 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.squareup.picasso.Picasso;
+
 public class Appdev_slider  extends PagerAdapter {
-    private int[] image_resources = {R.drawable.hack,R.drawable.machinelearning};
+    private int[] image_resources = {R.drawable.appdev10,R.drawable.appdev20};
     private Context ctx;
     private LayoutInflater layoutInflater;
     public Appdev_slider(Context ctx){

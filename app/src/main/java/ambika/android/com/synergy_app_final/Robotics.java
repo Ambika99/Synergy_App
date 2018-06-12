@@ -2,6 +2,7 @@ package ambika.android.com.synergy_app_final;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -35,6 +36,20 @@ public class Robotics extends AppCompatActivity {
                     public void onClick( View view ){
                         Intent i= new Intent();
                         i.setClass(Robotics.this,MainActivity.class);
+                        startActivity(i);
+                    }
+
+                } );
+        Button button2 = findViewById(R.id.register);
+
+        PushDownAnim.setPushDownAnimTo( button2)
+                .setOnClickListener( new View.OnClickListener(){
+                    @Override
+                    public void onClick( View view ){
+                        Intent i = new Intent();
+                        i.setAction(Intent.ACTION_VIEW);
+                        i.addCategory(Intent.CATEGORY_BROWSABLE);
+                        i.setData(Uri.parse("http://synergyietevit.tk/"));
                         startActivity(i);
                     }
 
