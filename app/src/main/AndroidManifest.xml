@@ -29,10 +29,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".Aboutus" />
         <activity android:name=".Sponsors" />
         <activity android:name=".Combos" />
+        <activity android:name=".Splash2">
+
+        </activity>
     </application>
 
 </manifest>

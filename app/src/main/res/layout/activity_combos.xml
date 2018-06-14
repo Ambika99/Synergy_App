@@ -133,7 +133,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/culturalborder"
-                android:text="Swipe right for Prev"
+                android:text="Scroll right for Prev"
                 android:textColor="@android:color/background_light"
                 android:layout_weight="1"/>
             <TextView
@@ -141,7 +141,7 @@
             android:layout_height="match_parent"
                 android:gravity="center|center_horizontal|center_vertical"
             android:background="@drawable/culturalborder"
-            android:text="Swipe left for Next"
+            android:text="Scroll left for Next"
                 android:layout_marginLeft="10dp"
                 android:textColor="@android:color/background_light"
             android:layout_weight="1"/>
