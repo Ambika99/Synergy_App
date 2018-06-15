@@ -157,7 +157,7 @@ If that was not enough to get your attention, we will also be providing hardware
                 <TextView
                     android:id="@+id/text2"
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
                     android:text="FEBRUARY 23TH, 2018- FEBRAUARY 24TH,2018"
