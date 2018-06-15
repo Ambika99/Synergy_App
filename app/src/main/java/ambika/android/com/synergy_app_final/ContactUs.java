@@ -1,8 +1,12 @@
 package ambika.android.com.synergy_app_final;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.net.Uri;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -11,10 +15,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.thekhaeng.pushdownanim.PushDownAnim;
 import com.ugurtekbas.fadingindicatorlibrary.FadingIndicator;
+
+import org.w3c.dom.Text;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -27,6 +34,10 @@ public class ContactUs extends AppCompatActivity {
     LinearLayout sliderlayout;
     private int dotscount;
     private ImageView[] dots;
+    TextView call1,call2;
+    private static final int REQUESTCALL =1;
+    int num;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +47,22 @@ public class ContactUs extends AppCompatActivity {
         sliderlayout = (LinearLayout) findViewById(R.id.slidedots);
         adapter = new Contactus_slider(this);
         pager.setAdapter(adapter);
+        call1 = (TextView) findViewById(R.id.call1);
+        call1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                makephonecall();
+                num=1;
+            }
+        });
+        call2 = (TextView) findViewById(R.id.call2);
+        call2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                makephonecall2();
+                num=2;
+            }
+        });
         FadingIndicator indicator = (FadingIndicator) findViewById(R.id.indicator);
         ViewPager viewpagerDefault = (ViewPager) findViewById(R.id.pager);
         Button button = findViewById(R.id.back);
@@ -51,18 +78,18 @@ public class ContactUs extends AppCompatActivity {
             }
         });
         MagicButton insta = (MagicButton) findViewById(R.id.insta);
-        facebook.setMagicButtonClickListener(new View.OnClickListener() {
+        insta.setMagicButtonClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent();
                 i.setAction(Intent.ACTION_VIEW);
                 i.addCategory(Intent.CATEGORY_BROWSABLE);
-                i.setData(Uri.parse("https://www.facebook.com/ieteisf/"));
+                i.setData(Uri.parse("https://www.instagram.com/iete_vit/"));
                 startActivity(i);
             }
         });
         MagicButton gmail = (MagicButton) findViewById(R.id.gmail);
-        facebook.setMagicButtonClickListener(new View.OnClickListener() {
+        gmail.setMagicButtonClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent();
@@ -139,4 +166,40 @@ public class ContactUs extends AppCompatActivity {
             }
         }*/
     }
+    private void makephonecall(){
+        if(ContextCompat.checkSelfPermission(ContactUs.this,Manifest.permission.CALL_PHONE)!=PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(ContactUs.this,new String[]{Manifest.permission.CALL_PHONE},REQUESTCALL);
+
+        }
+        else{
+            startActivity(new Intent(Intent.ACTION_CALL,Uri.parse("tel:9876543210")));
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if(requestCode==REQUESTCALL){
+            if(grantResults.length>0&&grantResults[0]== PackageManager.PERMISSION_GRANTED){
+                if(num==1) {
+                    makephonecall();
+                }
+                else if(num==2){
+                    makephonecall2();
+                }
+            }
+            else {
+                Toast.makeText(ContactUs.this,"PERMISSION DENIED",Toast.LENGTH_LONG).show();
+            }
+        }
+    }
+    private void makephonecall2(){
+        if(ContextCompat.checkSelfPermission(ContactUs.this,Manifest.permission.CALL_PHONE)!=PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(ContactUs.this,new String[]{Manifest.permission.CALL_PHONE},REQUESTCALL);
+
+        }
+        else{
+            startActivity(new Intent(Intent.ACTION_CALL,Uri.parse("tel:9876543210")));
+        }
+    }
+
 }

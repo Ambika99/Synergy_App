@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Splash"
-    android:background="@drawable/backgrounddark">
+    android:background="@drawable/layer">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,6 +19,20 @@
             android:layout_marginTop="160dp"
             android:foregroundGravity="center"
             android:src="@drawable/ietelogos" />
+
+        <TextView
+            android:id="@+id/synergytext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="SYNERGY"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>

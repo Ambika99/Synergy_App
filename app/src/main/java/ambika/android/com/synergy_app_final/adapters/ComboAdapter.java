@@ -10,9 +10,7 @@ import com.thoughtbot.expandablerecyclerview.models.ExpandableGroup;
 
 import java.util.List;
 
-import ambika.android.com.synergy_app_final.Combos;
 import ambika.android.com.synergy_app_final.Models.Events;
-import ambika.android.com.synergy_app_final.Models.event2;
 import ambika.android.com.synergy_app_final.R;
 import ambika.android.com.synergy_app_final.viewholder.ComboViewHolder;
 import ambika.android.com.synergy_app_final.viewholder.EventsViewHolder;

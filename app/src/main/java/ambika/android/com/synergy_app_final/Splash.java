@@ -8,10 +8,13 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class Splash extends AppCompatActivity {
     private TextView tv;
     private ImageView synergy;
     private ImageView iete;
+    TextView synergytext;
 
 
     @Override
@@ -19,8 +22,10 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         iete = (ImageView) findViewById(R.id.iete);
+        synergytext = (TextView) findViewById(R.id.synergytext);
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
         iete.startAnimation(myanim);
+        synergytext.startAnimation(myanim);
         final Intent intent = new Intent(this, MainActivity.class);
         Thread timer = new Thread(){
             @Override

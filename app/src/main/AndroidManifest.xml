@@ -3,6 +3,8 @@
     package="ambika.android.com.synergy_app_final">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -29,14 +31,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".Aboutus" />
         <activity android:name=".Sponsors" />
         <activity android:name=".Combos" />
-        <activity android:name=".Splash2">
-
-        </activity>
+        <activity android:name=".Splash2" />
+        <activity android:name=".Faqspage"></activity>
     </application>
 
 </manifest>

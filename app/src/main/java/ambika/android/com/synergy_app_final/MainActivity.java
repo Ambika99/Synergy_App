@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.faqs:
                 Intent i3 = new Intent();
-                i3.setClass(MainActivity.this,Faqs.class);
+                i3.setClass(MainActivity.this,Faqspage.class);
                 startActivity(i3);
                break;
             case R.id.culturalnight:

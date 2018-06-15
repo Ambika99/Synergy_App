@@ -7,28 +7,15 @@ import android.support.annotation.NonNull;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.view.animation.LinearInterpolator;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import com.bakerj.infinitecards.InfiniteCardView;
-import com.bakerj.infinitecards.transformer.DefaultCommonTransformer;
-import com.bakerj.infinitecards.transformer.DefaultTransformerToBack;
-import com.bakerj.infinitecards.transformer.DefaultTransformerToFront;
-import com.bakerj.infinitecards.transformer.DefaultZIndexTransformerCommon;
 import com.thekhaeng.pushdownanim.PushDownAnim;
 import com.ugurtekbas.fadingindicatorlibrary.FadingIndicator;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import ambika.android.com.synergy_app_final.Models.Events;
-import ambika.android.com.synergy_app_final.Models.event2;
-import ambika.android.com.synergy_app_final.adapters.ComboAdapter;
 
 
 public class Combos extends AppCompatActivity {

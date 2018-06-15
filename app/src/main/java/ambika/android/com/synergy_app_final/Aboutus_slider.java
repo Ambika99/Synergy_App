@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Aboutus_slider extends PagerAdapter{
-    private int[] image_resources = {R.drawable.hack,R.drawable.machinelearning};
+    private int[] image_resources = {R.drawable.ietesymbol,R.drawable.synergybanner};
     private Context ctx;
     private LayoutInflater layoutInflater;
     public Aboutus_slider(Context ctx){

@@ -47,9 +47,9 @@ public class Faqs extends AppCompatActivity {
 
 
         //getting the recyclerview from xml
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        //recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        //recyclerView.setHasFixedSize(true);
+        //recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         //initializing the productlist
         productList = new ArrayList<>();
@@ -97,6 +97,6 @@ public class Faqs extends AppCompatActivity {
         ProductAdapter adapter = new ProductAdapter(this, productList);
 
         //setting adapter to recyclerview
-        recyclerView.setAdapter(adapter);
+        //recyclerView.setAdapter(adapter);
     }
 }
