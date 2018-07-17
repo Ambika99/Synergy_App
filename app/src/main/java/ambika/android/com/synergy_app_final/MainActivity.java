@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
                 case R.id.aboutus:
                     Intent i6 = new Intent();
-                    i6.setClass(MainActivity.this,Aboutus.class);
+                    i6.setClass(MainActivity.this,AboutUsNew.class);
                     startActivity(i6);
                 break;
 

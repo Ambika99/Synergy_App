@@ -7,8 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 
+import com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
 import com.thekhaeng.pushdownanim.PushDownAnim;
 import com.ugurtekbas.fadingindicatorlibrary.FadingIndicator;
 
@@ -21,6 +23,7 @@ public class Gallery extends AppCompatActivity {
     "https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/29136709_1838599532817831_5117727930054606848_n.jpg?_nc_cat=0&oh=627ca4c58a9c8364a193406b03a6f218&oe=5B7CF20F",
     "https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/29178562_1838599946151123_4413039945581592576_n.jpg?_nc_cat=0&oh=754924a2ed5a278476063f82f87aaafb&oe=5B87ACCD"};
     LinearLayout sliderlayout;
+    Culturalnight_slider adapter2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,18 +41,21 @@ public class Gallery extends AppCompatActivity {
                     }
 
                 } );
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+
+       // ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        HorizontalInfiniteCycleViewPager cycle = (HorizontalInfiniteCycleViewPager)findViewById(R.id.cycle);
         Galleryadapter galleryadapter = new Galleryadapter(this,imageurls);
-        viewPager.setAdapter(galleryadapter);
+        cycle.setAdapter(galleryadapter);
         sliderlayout = (LinearLayout) findViewById(R.id.slidedots);
         FadingIndicator indicator = (FadingIndicator) findViewById(R.id.indicator);
 //assigning indicator to viewpager
-        indicator.setViewPager(viewPager);
+        indicator.setViewPager(cycle);
 
 //Set fill color
         indicator.setFillColor(Color.LTGRAY);
 //Set stroke color
         indicator.setStrokeColor(Color.CYAN);
+
 
     }
 }

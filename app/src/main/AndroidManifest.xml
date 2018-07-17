@@ -36,7 +36,8 @@
         <activity android:name=".Sponsors" />
         <activity android:name=".Combos" />
         <activity android:name=".Splash2" />
-        <activity android:name=".Faqspage"></activity>
+        <activity android:name=".Faqspage" />
+        <activity android:name=".AboutUsNew"></activity>
     </application>
 
 </manifest>
